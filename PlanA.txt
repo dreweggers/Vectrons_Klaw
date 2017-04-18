@@ -1,0 +1,25 @@
+So my initial thought is to break this up into 3 phases:
+
+phase 1:
+-break up the individual .py files into callable subroutines
+-define a __init__ method that will test the environment and tell the user local information and check if the tool is working (open a socket, lookup a url, etc.)
+-After getting and reporting this state, pass to a menu
+
+phase 2:
+-Implement some kind of monitor mode that displays packets and creates a logfile
+-Live filtering of what is displayed << This would be the hard/tedious part I think
+-Filtering should also be applicable to logfile after the fact
+
+phase 3:
+-Implement some MAC spoofing attacks with rawpacket.py functionality
+
+
+
+
+Phase 1 notes
+I think all of the http* scripts can be combined into one menu where the user makes and http request, then the response is processed in several ways
+There are several scripts that center around a socket, these can probably be wired together <mtls, namelookup, netclient, etc.> 
+Then there are a few parsing scripts:
+	readhdr should be modularized to support monitor mode, and be a general interpretor for the rest of the toolset
+	parsecap just needs to be setup to accept a filename
+	readtest seems to work like readhdr, just with different outputs
