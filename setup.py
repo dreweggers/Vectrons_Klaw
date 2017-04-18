@@ -32,5 +32,5 @@ setup(name='Vectrons_Klaw',
 		'Topic :: System :: Networking',
 	],
 	install_requires=[
-		'pcapy',
+		'python-pcapy',
 	])
