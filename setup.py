@@ -33,4 +33,5 @@ setup(name='Vectrons_Klaw',
 	],
 	install_requires=[
 		'python-pcapy',
+		'psutil',
 	])

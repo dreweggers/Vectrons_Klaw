@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import pcapy
-
-devs = pcapy.findalldevs()
-print(devs)
+def FindNw():
+	devs = pcapy.findalldevs()
+	print(devs)
+FindNw()
