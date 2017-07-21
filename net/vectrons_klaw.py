@@ -56,6 +56,7 @@ def main():
 				mainlib.readhdr()
 				time.sleep(3)
 			elif choice == 7:
+				break
 				return
 			else:
 				print("Invalid selection...try again")
@@ -66,6 +67,7 @@ def main():
 			time.sleep(3)
 			clearscreen()
 			continue
+	print("Graceful exit")
 
 
 if __name__ == '__main__':
